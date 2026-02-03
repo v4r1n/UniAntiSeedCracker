@@ -1,0 +1,101 @@
+# UniAntiSeedCracker Messages
+# Supports MiniMessage format: https://docs.papermc.io/adventure/minimessage/api/
+# Also supports Legacy color codes: &a, &b, &c, etc.
+# You can mix both formats in the same message
+
+# Message version (do not modify)
+messages-version: 1
+
+# Prefix for all messages
+prefix: "<bold><gradient:#00D4FF:#00FF88>UniAntiSeedCracker</gradient></bold> <dark_aqua>|</dark_aqua> "
+
+# Command messages
+commands:
+  # Reload command
+  reload:
+    success: "<green>Configuration reloaded successfully!</green>"
+
+  # Debug command
+  debug:
+    header: "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+    title: "<gradient:#FF6B6B:#FFE66D><bold>Debug Information</bold></gradient>"
+    # General status
+    general:
+      title: "<gold><bold>▸ General Status</bold></gold>"
+      plugin-enabled: "<gray>  Plugin Enabled:</gray> <green>✓ Yes</green>"
+      protocol-lib: "<gray>  ProtocolLib:</gray> <green>✓ Loaded</green>"
+      worlds-count: "<gray>  Worlds Loaded:</gray> <aqua>{count}</aqua>"
+    # Hashed seed module
+    hashed-seed:
+      title: "<gold><bold>▸ Hashed Seed Randomizer</bold></gold>"
+      login-enabled: "<gray>  Login Packet:</gray> {status}"
+      respawn-enabled: "<gray>  Respawn Packet:</gray> {status}"
+      status-enabled: "<green>✓ Enabled</green>"
+      status-disabled: "<red>✗ Disabled</red>"
+    # End spike modifier
+    end-spikes:
+      title: "<gold><bold>▸ End Spike Modifier</bold></gold>"
+      enabled: "<gray>  Enabled:</gray> {status}"
+      mode: "<gray>  Mode:</gray> <aqua>{mode}</aqua>"
+      worlds: "<gray>  Worlds:</gray> <yellow>{worlds}</yellow>"
+    # End city modifier
+    end-cities:
+      title: "<gold><bold>▸ End City Modifier</bold></gold>"
+      enabled: "<gray>  Enabled:</gray> {status}"
+      worlds: "<gray>  Worlds:</gray> <yellow>{worlds}</yellow>"
+    # Buried treasure modifier
+    buried-treasure:
+      title: "<gold><bold>▸ Buried Treasure Modifier</bold></gold>"
+      enabled: "<gray>  Enabled:</gray> {status}"
+      worlds: "<gray>  Worlds:</gray> <yellow>{worlds}</yellow>"
+    # Desert temple modifier
+    desert-temple:
+      title: "<gold><bold>▸ Desert Temple Modifier</bold></gold>"
+      enabled: "<gray>  Enabled:</gray> {status}"
+      worlds: "<gray>  Worlds:</gray> <yellow>{worlds}</yellow>"
+    # Jungle temple modifier
+    jungle-temple:
+      title: "<gold><bold>▸ Jungle Temple Modifier</bold></gold>"
+      enabled: "<gray>  Enabled:</gray> {status}"
+      worlds: "<gray>  Worlds:</gray> <yellow>{worlds}</yellow>"
+    # Shipwreck modifier
+    shipwreck:
+      title: "<gold><bold>▸ Shipwreck Modifier</bold></gold>"
+      enabled: "<gray>  Enabled:</gray> {status}"
+      worlds: "<gray>  Worlds:</gray> <yellow>{worlds}</yellow>"
+    # Witch hut modifier
+    witch-hut:
+      title: "<gold><bold>▸ Witch Hut Modifier</bold></gold>"
+      enabled: "<gray>  Enabled:</gray> {status}"
+      worlds: "<gray>  Worlds:</gray> <yellow>{worlds}</yellow>"
+    # Ocean monument modifier
+    ocean-monument:
+      title: "<gold><bold>▸ Ocean Monument Modifier</bold></gold>"
+      enabled: "<gray>  Enabled:</gray> {status}"
+      worlds: "<gray>  Worlds:</gray> <yellow>{worlds}</yellow>"
+    # Pillager outpost modifier
+    pillager-outpost:
+      title: "<gold><bold>▸ Pillager Outpost Modifier</bold></gold>"
+      enabled: "<gray>  Enabled:</gray> {status}"
+      worlds: "<gray>  Worlds:</gray> <yellow>{worlds}</yellow>"
+    # Igloo modifier
+    igloo:
+      title: "<gold><bold>▸ Igloo Modifier</bold></gold>"
+      enabled: "<gray>  Enabled:</gray> {status}"
+      worlds: "<gray>  Worlds:</gray> <yellow>{worlds}</yellow>"
+    footer: "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+
+  # Help/Usage
+  help:
+    header: "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+    title: "<gradient:#00D4FF:#00FF88><bold>UniAntiSeedCracker Help</bold></gradient>"
+    reload: "<yellow>/{label} reload</yellow> <gray>-</gray> <white>Reload configuration</white>"
+    version: "<yellow>/{label} version</yellow> <gray>-</gray> <white>Show version information</white>"
+    debug: "<yellow>/{label} debug</yellow> <gray>-</gray> <white>Show debug information</white>"
+    footer: "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+
+  # No permission
+  no-permission: "<red>You don't have permission to use this command.</red>"
+
+  # Unknown subcommand
+  unknown-subcommand: "<red>Unknown subcommand. Use <yellow>/{label} help</yellow> for available commands.</red>"

@@ -1,0 +1,21 @@
+name: UniAntiSeedCracker
+version: '${version}'
+main: com.v4r1n.uniantiseedcracker.UniAntiSeedCracker
+api-version: '1.21'
+authors: [v4r1n]
+description: Modifies the hashed seed sent to clients upon joining to make cracking the seed of your world harder
+credit: 'Based on AntiSeedCracker by Gadse'
+depend: ["ProtocolLib"]
+
+commands:
+  uniantiseedcracker:
+    permission: "uniantiseedcracker.admin"
+    usage: /uniantiseedcracker <debug|help|reload|version|>
+    description: Admin commands for UniAntiSeedCracker
+    aliases:
+      - uasc
+      - antiseedcracker
+
+permissions:
+  uniantiseedcracker.admin:
+    default: op

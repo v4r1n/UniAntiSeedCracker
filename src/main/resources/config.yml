@@ -1,0 +1,112 @@
+# UniAntiSeedCracker Configuration
+# DO NOT MODIFY THIS VALUE - Used for automatic config migration
+config-version: 1
+
+# Settings for when the server-sent hashed seed is randomized.
+randomize_hashed_seed:
+  # Whether the seed should be randomized in the login packet.
+  # The login packet is sent before the player sees the world, to send server and join world information.
+  # This is NOT the handshake login packet, so at this point the player already joined the server.
+  login: true
+  # Whether the seed should be randomized in the respawn packet.
+  # The respawn packet is sent when the player respawns after a death, and when they are teleported to a different dimension.
+  # It contains about half the fields the login packet has, mainly the new world information.
+  respawn: true
+
+# Warning: All of these actually modify your world. Only enable them if you are okay with that!
+modifiers:
+  # Modification of end spikes (bedrock) so that they do not conform to known pillar generation seeds.
+  end_spikes:
+    # Whether this feature is enabled.
+    enabled: false
+    # How the end spikes should be modified.
+    # "swap" means that it swaps the bedrock blocks of two spikes, but this comes at the downside of floating bedrock.
+    # "move" means that it moves a random bedrock block down, but makes the positions "illogical".
+    # At the moment there is no check against "move", so by default I recommend "move".
+    mode: move
+    # The worlds end spikes are allowed to be modified in.
+    worlds:
+      - "world_the_end"
+
+  # Modification of end cities' base tower (magenta_stained_glass -> magenta_stained_glass_pane).
+  # This check is only done once per end city; so if someone decides to 'fix' it, the effort is undone.
+  end_cities:
+    # Whether this feature is enabled.
+    enabled: false
+    # The worlds end cities are allowed to be modified in.
+    worlds:
+      - "world_the_end"
+
+  # Modification of buried treasure chest positions.
+  # Moves the chest from standard chunk-center position to a random offset.
+  buried_treasure:
+    # Whether this feature is enabled.
+    enabled: false
+    # The worlds buried treasures are allowed to be modified in.
+    worlds:
+      - "world"
+
+  # Modification of desert temple (pyramid) chest positions.
+  # Randomly offsets chest positions within the temple structure.
+  desert_temple:
+    # Whether this feature is enabled.
+    enabled: false
+    # The worlds desert temples are allowed to be modified in.
+    worlds:
+      - "world"
+
+  # Modification of jungle temple (pyramid) chest positions.
+  # Randomly offsets chest positions within the temple structure.
+  jungle_temple:
+    # Whether this feature is enabled.
+    enabled: false
+    # Whether to also modify dispenser (trap) positions.
+    modify_traps: false
+    # The worlds jungle temples are allowed to be modified in.
+    worlds:
+      - "world"
+
+  # Modification of shipwreck chest positions.
+  # Randomly offsets chest positions within the shipwreck structure.
+  shipwreck:
+    # Whether this feature is enabled.
+    enabled: false
+    # The worlds shipwrecks are allowed to be modified in.
+    worlds:
+      - "world"
+
+  # Modification of witch hut (swamp hut) interior block positions.
+  # Randomly offsets cauldron, crafting table, and flower pot positions.
+  witch_hut:
+    # Whether this feature is enabled.
+    enabled: false
+    # The worlds witch huts are allowed to be modified in.
+    worlds:
+      - "world"
+
+  # Modification of ocean monument interior blocks.
+  # Randomly modifies sea lantern and gold block positions.
+  ocean_monument:
+    # Whether this feature is enabled.
+    enabled: false
+    # The worlds ocean monuments are allowed to be modified in.
+    worlds:
+      - "world"
+
+  # Modification of pillager outpost block positions.
+  # Randomly offsets chest positions and modifies cage structure.
+  pillager_outpost:
+    # Whether this feature is enabled.
+    enabled: false
+    # The worlds pillager outposts are allowed to be modified in.
+    worlds:
+      - "world"
+
+  # Modification of igloo basement block positions.
+  # Randomly offsets brewing stand, cauldron, and chest positions.
+  igloo:
+    # Whether this feature is enabled.
+    enabled: false
+    # The worlds igloos are allowed to be modified in.
+    worlds:
+      - "world"
