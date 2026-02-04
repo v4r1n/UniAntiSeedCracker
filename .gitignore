@@ -10,3 +10,6 @@ bin/
 # OS
 .DS_Store
 Thumbs.db
+
+# Documentation (local only)
+CLAUDE.md

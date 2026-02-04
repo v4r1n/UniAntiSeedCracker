@@ -2,6 +2,10 @@
 # DO NOT MODIFY THIS VALUE - Used for automatic config migration
 config-version: 1
 
+# Enable debug mode for verbose logging
+# Useful for troubleshooting structure modifications
+debug: false
+
 # Settings for when the server-sent hashed seed is randomized.
 randomize_hashed_seed:
   # Whether the seed should be randomized in the login packet.

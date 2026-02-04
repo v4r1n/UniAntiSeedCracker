@@ -122,7 +122,7 @@ public final class UniAntiSeedCracker extends JavaPlugin implements CommandExecu
                 }
 
                 if (world.getEnvironment() != World.Environment.THE_END) {
-                    getLogger().warning("The world '%s' is not an end dimension, it will be ignored.");
+                    getLogger().warning("The world '" + world.getName() + "' is not an end dimension, it will be ignored.");
                     return;
                 }
 
